@@ -1,0 +1,331 @@
+
+
+
+
+<!DOCTYPE html>
+<!--[if IE 8]>         <html class="no-js lt-ie9 offcanvas" lang="en"> <![endif]-->
+<!--[if IE 9]>         <html class="no-js lt-ie10 lt-ie9 offcanvas" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js offcanvas" lang="en">
+<!--<![endif]-->
+
+<head>
+ 
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,initial-scale=1.0" />
+    <title>iseeme challange</title>
+    <meta name="description" content="Basic HTML/Tailwind starter" />
+    <meta name="author" content="Daily Dev Tips" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+    <meta name="theme-color" content="#00bfdf" />
+    <meta name="description" content="Welcome to I See Me! Please browse our award-winning selection of personalized children's books &amp; gifts that will show your child how special they are! Order today!" />
+    <meta name="keywords" content="I see me books, personalized baby gifts, personalized books for kids, personalized baby books, personalized childrens books, personalized children's books, personalized children's book, personalized baby gift, new baby gift, unique gift, personalized baby book"
+    />
+    <meta name="robots" content="INDEX,FOLLOW" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <!-- Disable compatibility mode in IE -->
+
+    <title>Personalized Children’s Books &amp; Gifts | I See Me!</title>
+
+    <link rel="icon" href="https://cdn-store.iseeme.com/skin/frontend/polar/default/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="https://cdn-store.iseeme.com/skin/frontend/polar/default/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" type="text/css" href="https://cdn-store.iseeme.com/media/css_secure/c285f91864fbfc7613a900034a4e2184.1636057530.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="https://cdn-store.iseeme.com/media/css_secure/59f10803d9cb78c51fe0c65f6121f099.1569506732.css" media="print" />
+
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@1.16.2/dist/full.css" rel="stylesheet" type="text/css" />
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2/dist/tailwind.min.css" rel="stylesheet" type="text/css" />
+
+  <link href="https://cdn.jsdelivr.net/npm/basscss@latest/css/basscss.min.css" rel="stylesheet" type="text/css" />
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@1.16.2/dist/full.css" rel="stylesheet" type="text/css" />
+<link href="./styles.css" rel="stylesheet " type="text/css" />
+    <script type="text/javascript" src="https://cdn-store.iseeme.com/media/js/e6a401f08c9c7742d4ceb01f55ba0036.1636057530.js"></script>
+    <script type="text/javascript" src="https://cdn-store.iseeme.com/media/js/3eadf1b6f3495338355d6a8a7e76cf6d.1569506732.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+  </head>
+
+
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+  <script>
+    var cont=0;
+function loopSlider(){
+  var xx= setInterval(function(){
+        switch(cont)
+        {
+        case 0:{
+            $("#slider-1").fadeOut(400);
+            $("#slider-2").delay(400).fadeIn(400);
+            $("#sButton1").removeClass("bg-purple-800");
+            $("#sButton2").addClass("bg-purple-800");
+        cont=1;
+        
+        break;
+        }
+        case 1:
+        {
+        
+            $("#slider-2").fadeOut(400);
+            $("#slider-1").delay(400).fadeIn(400);
+            $("#sButton2").removeClass("bg-purple-800");
+            $("#sButton1").addClass("bg-purple-800");
+           
+        cont=0;
+        
+        break;
+        }
+        
+        
+        }},8000);
+
+}
+
+function reinitLoop(time){
+clearInterval(xx);
+setTimeout(loopSlider(),time);
+}
+
+
+
+function sliderButton1(){
+
+    $("#slider-2").fadeOut(400);
+    $("#slider-1").delay(400).fadeIn(400);
+    $("#sButton2").removeClass("bg-purple-800");
+    $("#sButton1").addClass("bg-purple-800");
+    reinitLoop(4000);
+    cont=0
+    
+    }
+    
+    function sliderButton2(){
+    $("#slider-1").fadeOut(400);
+    $("#slider-2").delay(400).fadeIn(400);
+    $("#sButton1").removeClass("bg-purple-800");
+    $("#sButton2").addClass("bg-purple-800");
+    reinitLoop(4000);
+    cont=1
+    
+    }
+
+    $(window).ready(function(){
+        $("#slider-2").hide();
+        $("#sButton1").addClass("bg-purple-800");
+        
+
+        loopSlider();
+     
+        
+    
+    
+    
+    
+    });
+
+  
+  </script>
+</head>
+
+<body>
+
+
+
+<section class="text-gray-600 body-font">
+  <div class="bg-white container px-5 py-24 mx-auto">
+    <div class="flex flex-wrap w-full mb-8">
+      <div class="w-full mb-6 lg:mb-0">
+     
+        <div class="h-1 w-20 bg-green-500 rounded"></div>
+      </div>
+    </div>
+    <div class="flex flex-wrap -m-4">
+         <div class="lg:w-1/4 p-4 w-1/2">
+      <a class="block relative h-48 rounded overflow-hidden">
+          <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://cdn-store.iseeme.com/skin/frontend\polar\default\images\homepage\2021-black-friday\bk401.png">
+        </a>
+        <div class="mt-4">
+          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1"></h3>
+          <h2 class="text-gray-900 title-font text-lg font-medium">Personalized Storybook</h2>
+          
+        </div>
+      </div>
+      <div class="lg:w-1/4 p-4 w-1/2">
+        <a class="block relative h-48 rounded overflow-hidden">
+          <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://cdn-store.iseeme.com/skin/frontend/polar/default/images/homepage/2021-black-friday/bk160.png">
+        </a>
+        <div class="mt-4">
+          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1"></h3>
+          <h2 class="text-gray-900 title-font text-lg font-medium">Personalized Puzzle</h2>
+         
+        </div>
+      </div>
+      <div class="lg:w-1/4 p-4 w-1/2">
+        <a class="block relative h-48 rounded overflow-hidden">
+          <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://cdn-store.iseeme.com/skin/frontend/polar/default/images/homepage/2021-black-friday/puzzle.png">
+        </a>
+        <div class="mt-4">
+          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1"></h3>
+          <h1 class="text-center text-gray-900 title-font text-lg font-medium">Personalized Storybook</h1>
+        </div>
+      </div>
+      <div class="lg:w-1/4 p-4 w-1/2">
+        <a class="block relative h-48 rounded overflow-hidden">
+          <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://cdn-store.iseeme.com/skin/frontend/polar/default/images/homepage/2021-black-friday/bk780.png">
+        </a>
+        <div class="mt-4">
+          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1"></h3>
+          <h1 class="text-center text-gray-900 title-font text-lg font-medium">Personalized Storybook</h1>
+        </div>
+        </div>
+    </div>
+  </div>
+</section>
+<section class="bg-white text-gray-600 body-font">
+  <div class="container px-5 py-24 mx-auto">
+    <div class="flex flex-wrap w-full mb-8">
+      <div class="w-full mb-6 lg:mb-0">
+        <h1 class="sm:text-4xl text-5xl font-bold font-medium title-font mb-2 text-gray-900">What Are Clients Say</h1>
+        <div class="h-1 w-20 bg-green-500 rounded"></div>
+      </div>
+    </div>
+    <div class="max-w-md py-4 px-8 bg-white shadow-lg rounded-lg my-20">
+  <div class="flex justify-center md:justify-end -mt-16">
+    <img class="w-20 h-20 object-cover rounded-full border-2 border-green-500" src="https://wac.edgecastcdn.net/001A39/prod/item/MnYXD7DrhT5IkBasite/236L.png">
+  </div>
+  <div>
+    <h2 class="text-gray-800 text-3xl font-semibold"></h2>
+    <p class="mt-2 text-gray-600">Good books</p>
+  </div>
+  <div class="flex justify-end mt-4">
+    <a href="#" class="text-xl font-medium text-green-500">KOLBY L</a>
+  </div>
+</div>
+  </div>
+  </div>
+</section>
+
+
+
+
+
+
+<section class="shop-favorites bg-white">
+
+
+
+<!-- component -->
+<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-4 mb-12">
+    <article>
+         <h1 class="sm:text-4xl text-5xl font-bold font-medium title-font mb-2 text-gray-900">Shop Collections</h1>
+        <div class="h-1 w-20 bg-green-500 rounded"></div>
+        <section class="mt-6 grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-x-6 gap-y-8">
+            <article class="relative w-full h-64 bg-cover bg-center group rounded-lg overflow-hidden shadow-lg hover:shadow-2xl  transition duration-300 ease-in-out"
+                style="background-image: url('https://cdn-store.iseeme.com/skin/frontend/polar/default/images/homepage/2019-holiday-homepage/category-baby.jpg');">
+                <div class="absolute inset-0 bg-black bg-opacity-50 group-hover:opacity-75 transition duration-300 ease-in-out"></div>
+                <div class="relative w-full h-full px-4 sm:px-6 lg:px-4 flex justify-center items-center">
+                    <h3 class="text-center">
+                        <a class="text-white text-2xl font-bold text-center" href="#">
+                            <span class="absolute inset-0"></span>
+                           Shop Baby & Toddler
+                        </a>
+                    </h3>
+                   
+                </div>
+            </article>
+            <article class="relative w-full h-64 bg-cover bg-center group rounded-lg overflow-hidden shadow-lg hover:shadow-2xl  transition duration-300 ease-in-out"
+                style="background-image: url('https://cdn-store.iseeme.com/skin/frontend/polar/default/images/homepage/2019-holiday-homepage/category-ages4-8.jpg');">
+                <div class="absolute inset-0 bg-black bg-opacity-50 group-hover:opacity-75 transition duration-300 ease-in-out"></div>
+                <div class="relative w-full h-full px-4 sm:px-6 lg:px-4 flex justify-center items-center">
+                    <h3 class="text-center">
+                        <a class="text-white text-2xl font-bold text-center" href="#">
+                            <span class="absolute inset-0"></span>
+                           Ages 4-8
+                        </a>
+                    </h3>
+                 
+                </div>
+            </article>
+            <article class="relative w-full h-64 bg-cover bg-center group rounded-lg overflow-hidden shadow-lg hover:shadow-2xl  transition duration-300 ease-in-out"
+                style="background-image: url('https://cdn-store.iseeme.com/skin/frontend/polar/default/images/homepage/2019-holiday-homepage/category-family.jpg');">
+                <div class="absolute inset-0 bg-black bg-opacity-50 group-hover:opacity-75 transition duration-300 ease-in-out"></div>
+                <div class="relative w-full h-full px-4 sm:px-6 lg:px-4 flex justify-center items-center">
+                    <h3 class="text-center">
+                        <a class="text-white text-2xl font-bold text-center" href="#">
+                            <span class="absolute inset-0"></span>
+                        For The Whole Family
+                        </a>
+                    </h3>
+                </div>
+            </article>
+ <article class="relative w-full h-64 bg-cover bg-center group rounded-lg overflow-hidden shadow-lg hover:shadow-2xl  transition duration-300 ease-in-out"
+                style="background-image: url('https://cdn-store.iseeme.com/skin/frontend/polar/default/images/homepage/2019-holiday-homepage/category-pets.jpg');">
+                <div class="absolute inset-0 bg-black bg-opacity-50 group-hover:opacity-75 transition duration-300 ease-in-out"></div>
+                <div class="relative w-full h-full px-4 sm:px-6 lg:px-4 flex justify-center items-center">
+                    <h3 class="text-center">
+                        <a class="text-white text-2xl font-bold text-center" href="#">
+                            <span class="button-white  absolute inset-0"></span>
+                           Pets
+                        </a>
+                    </h3>
+                </div>
+            </article>
+             <article class="relative w-full h-64 bg-cover bg-center group rounded-lg overflow-hidden shadow-lg hover:shadow-2xl  transition duration-300 ease-in-out"
+                style="background-image: url('https://cdn-store.iseeme.com/skin/frontend/polar/default/images/homepage/2019-holiday-homepage/category-religious.jpg');">
+                <div class="absolute inset-0 bg-black bg-opacity-50 group-hover:opacity-75 transition duration-300 ease-in-out"></div>
+                <div class="relative w-full h-full px-4 sm:px-6 lg:px-4 flex justify-center items-center">
+                    <h3 class="text-center">
+                        <a class="text-white text-2xl font-bold text-center" href="#">
+                            <span class="absolute inset-0"></span>
+                           Religious
+                        </a>
+                    </h3>
+                </div>
+            </article>
+   <article class="relative w-full h-64 bg-cover bg-center group rounded-lg overflow-hidden shadow-lg hover:shadow-2xl  transition duration-300 ease-in-out"
+                style="background-image: url(' https://cdn-store.iseeme.com/skin/frontend/polar/default/images/homepage/2019-holiday-homepage/shopfavorites-twolines.jpg');">
+                <div class="absolute inset-0 bg-black bg-opacity-50 group-hover:opacity-75 transition duration-300 ease-in-out"></div>
+                <div class="relative w-full h-full px-4 sm:px-6 lg:px-4 flex justify-center items-center">
+                    <h3 class="text-center">
+                        <a class="text-white text-2xl font-bold text-center" href="#">
+                            <span class="absolute inset-0"></span>
+                           Favorites
+                        </a>
+                    </h3>
+                </div>
+            </article>
+
+
+        </section>
+    </article>
+</section>
+
+     
+ 
+
+
+
+
+
+<div class="row center footer-trustbuilders">
+            <img src="https://cdn-store.iseeme.com/media/wysiwyg/images/trustbuilders.png" alt="">        </div>
+<div class="bg-white-200">
+
+  </div>
+
+
+
+<style>
+.headline{
+  border-bottom: "1px solid #000"
+}
+</style>
+
+
+  </body>
+</html>
